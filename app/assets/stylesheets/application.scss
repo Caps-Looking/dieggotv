@@ -147,6 +147,10 @@ body {
       justify-content: flex-start;
       align-items: center;
     }
+
+    .services {
+      margin: 20px 20px;
+    }
   }
 
   .form {
@@ -196,6 +200,42 @@ body {
         border: 1px solid gray;
         border-radius: 4px;
         min-width: 200px;
+      }
+
+      .nested-fields {
+        display: flex;
+        padding: 1rem;
+        text-align: center;
+        align-items: center;
+        position: relative;
+
+        i {
+          position: absolute;
+          bottom: 20px;
+          right: -10px;
+          color: $base-color;
+          text-decoration: none;
+          transition: all .2s;
+          align-items: center;
+
+          &:hover {
+            transform: scale(2);
+          }
+        }
+      }
+
+      .links {
+        transition: all .2s;
+        a {
+          margin-top: 15px;
+          text-decoration: none;
+          color: $base-color;
+          font-size: large;
+        }
+
+        &:hover {
+          transform: scale(1.5);
+        }
       }
     }
 

@@ -16,6 +16,18 @@
   </div>
   <div>
     <label> Package: </label>
-    <%= @customer.package.name %> <%= @customer.package.price %>
+    <%= @customer.package.name %> - $<%= @customer.package.price %>
   </div>
+
+  <% unless @customer.customers_additional_services.empty? %>
+    <div>
+      <label> Additional Services: </label>
+      <% @customer.customers_additional_services.each do |as| %>
+        <div class="services">
+          * <%= as.additional_service.name %> - $<%= as.additional_service.price %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
 </div>

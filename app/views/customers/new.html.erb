@@ -17,7 +17,7 @@
       <%= f.simple_fields_for :customers_additional_services, f.object.customers_additional_services.build do |s| %>
         <%= render 'additional_services/fields', f: s %>
         <div class="links">
-          <%= link_to_add_association 'add additional service', f, :customers_additional_services, partial: 'additional_services/fields' %>
+          <%= link_to_add_association 'Add Additional Service', f, :customers_additional_services, partial: 'additional_services/fields' %>
         </div>
       <% end %>
     </div>
