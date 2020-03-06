@@ -1,0 +1,28 @@
+<div class="index">
+
+  <div class="index-header">
+    <h1>Packages</h1>
+    <%= link_to fa_icon("plus"), new_package_path, class: "plus-icon" %>
+  </div>
+
+  <table cellspacing="0" cellpadding="0">
+    <tr class="table-header">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+    <% @packages.each do |package| %>
+      <tr class=package>
+        <td><%= package.id %></td>
+        <td><%= package.name %></td>
+        <td><%= package.price %></td>
+        <td>
+          <%= link_to fa_icon("eye"), package, method: :get %>
+          <%= link_to fa_icon("edit"), edit_package_path(package) %>
+          <%= link_to fa_icon("trash"), package, method: :delete, data: {confirm: "Do you really want to remove?"} %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>

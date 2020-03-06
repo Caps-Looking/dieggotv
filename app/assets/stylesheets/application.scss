@@ -1,0 +1,227 @@
+@import "font-awesome";
+
+body, input {
+  padding: 0;
+  border: unset;
+}
+
+body {
+  $base-color: #22b8e6;
+
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Source Code Pro", Monaco, monospace;
+
+  .nav {
+    width: 100vw;
+    min-height: 8%;
+    background-color: $base-color;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    .logo {
+      flex: 2;
+      font-size: xx-large;
+      margin: 5px 16px;
+
+      img {
+
+        max-width: 12rem;
+      }
+    }
+
+    .links {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 16px;
+      color: white;
+      cursor: pointer;
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: all .2s;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+
+  }
+
+  .index {
+    table {
+      width: 100%;
+      border: unset;
+      th, td {
+        padding: 16px;
+        border: unset;
+      }
+    }
+
+    .table-header {
+      background-color: #c5c5c552;
+      font-weight: bold;
+      font-size: 15px;
+      margin: 0 40px;
+      padding: 15rem;
+    }
+
+    tr.package {
+      td {
+        padding: 1rem;
+        border-bottom: 1px solid #c5c5c552;
+        text-align: center;
+        font-size: 15px;
+        margin: 0 65px;
+
+        i {
+          color: $base-color;
+          text-decoration: none;
+          transition: all .2s;
+
+          &:hover {
+            transform: scale(2);
+          }
+        }
+      }
+    }
+
+    h1 {
+      margin: 16px 16px;
+    }
+
+    .index-header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .plus-icon {
+        color: $base-color;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: all .2s;
+        margin-top: 0.3%;
+
+        &:hover {
+          transform: scale(2);
+        }
+      }
+    }
+  }
+
+  .show {
+    font-size: 18px;
+    margin: 16px 16px;
+
+    div {
+      margin-bottom: 1rem;
+
+      label {
+        font-weight: bold;
+      }
+
+      i {
+        margin-left: 1rem;
+        color: $base-color;
+        text-decoration: none;
+        transition: all .2s;
+
+        &:hover {
+          transform: scale(2);
+        }
+      }
+    }
+
+    h1 {
+      margin: 0 0;
+    }
+
+    .show-header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    div.form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem 0;
+      font-size: 15px;
+      text-align: center;
+      align-items: center;
+
+      span {
+        color: red;
+      }
+
+      label {
+        display: flex;
+        justify-content: center;
+
+        abbr {
+          color: red;
+          text-decoration: none;
+        }
+      }
+
+      input {
+        outline: none;
+        width: 100px;
+        max-width: 100%;
+        border-bottom: 1px solid gray;
+        transition: all .5s ease;
+        text-align: center;
+        margin-top: 10px;
+
+        &:focus, &:hover {
+          width: 300px;
+        }
+      }
+
+      select {
+        background: transparent;
+        border: 1px solid gray;
+        border-radius: 4px;
+        min-width: 200px;
+      }
+    }
+
+    .button {
+      width: 300px;
+      border-radius: 4px;
+      color: white;
+      background-color: $base-color;
+      border: unset;
+      height: 40px;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    h1 {
+      margin: 0 0;
+    }
+
+  }
+
+  .form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+}

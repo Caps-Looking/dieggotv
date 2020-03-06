@@ -1,0 +1,15 @@
+<div class="form-header">
+  <h1>Additional Service</h1>
+</div>
+<div class="form">
+  <%= simple_form_for @additional_service do |f| %>
+    <div class="form">
+      <%= f.input :name, input_html: { autocomplete: "off" } %>
+    </div>
+    <div class="form">
+      <%= f.input :price, input_html: { min: "0", autocomplete: "off" } %>
+    </div>
+
+    <%= f.submit "Save", class: "button" %>
+  <% end %>
+</div>

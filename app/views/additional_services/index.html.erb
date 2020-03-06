@@ -1,0 +1,28 @@
+<div class="index">
+
+  <div class="index-header">
+    <h1>Additional Services</h1>
+    <%= link_to fa_icon("plus"), new_additional_service_path, class: "plus-icon" %>
+  </div>
+
+  <table cellspacing="0" cellpadding="0">
+    <tr class="table-header">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+    <% @additional_services.each do |additional_service| %>
+      <tr class=package>
+        <td><%= additional_service.id %></td>
+        <td><%= additional_service.name %></td>
+        <td><%= additional_service.price %></td>
+        <td>
+          <%= link_to fa_icon("eye"), additional_service, method: :get %>
+          <%= link_to fa_icon("edit"), edit_additional_service_path(additional_service) %>
+          <%= link_to fa_icon("trash"), additional_service, method: :delete, data: {confirm: "Do you really want to remove?"} %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>

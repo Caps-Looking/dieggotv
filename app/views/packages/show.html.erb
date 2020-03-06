@@ -1,0 +1,17 @@
+<div class="show">
+  <div class="show-header">
+    <h1>Package</h1>
+  </div>
+  <div>
+    <label> Id: </label>
+    <%= @package.id %> <%= link_to fa_icon("edit"), edit_package_path(@package) %>
+  </div>
+  <div>
+    <label> Name: </label>
+    <%= @package.name %>
+  </div>
+  <div>
+    <label> Price: </label>
+    <%= @package.price %>
+  </div>
+</div>

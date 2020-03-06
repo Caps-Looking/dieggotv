@@ -1,0 +1,30 @@
+<div class="index">
+
+  <div class="index-header">
+    <h1>Customers</h1>
+    <%= link_to fa_icon("plus"), new_customer_path, class: "plus-icon" %>
+  </div>
+
+  <table cellspacing="0" cellpadding="0">
+    <tr class="table-header">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Cpf</th>
+      <th>Package</th>
+      <th>Actions</th>
+    </tr>
+    <% @customers.each do |customer| %>
+      <tr class=package>
+        <td><%= customer.id %></td>
+        <td><%= customer.name %></td>
+        <td><%= customer.cpf %></td>
+        <td><%= customer.package.name %></td>
+        <td>
+          <%= link_to fa_icon("eye"), customer, method: :get %>
+          <%= link_to fa_icon("edit"), edit_customer_path(customer) %>
+          <%= link_to fa_icon("trash"), customer, method: :delete, data: {confirm: "Do you really want to remove?"} %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>

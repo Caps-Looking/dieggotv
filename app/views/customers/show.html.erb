@@ -1,0 +1,21 @@
+<div class="show">
+  <div class="show-header">
+    <h1>Customer</h1>
+  </div>
+  <div>
+    <label> Id: </label>
+    <%= @customer.id %> <%= link_to fa_icon("edit"), edit_customer_path(@customer) %>
+  </div>
+  <div>
+    <label> Name: </label>
+    <%= @customer.name %>
+  </div>
+  <div>
+    <label> Cpf: </label>
+    <%= @customer.cpf %>
+  </div>
+  <div>
+    <label> Package: </label>
+    <%= @customer.package.name %> <%= @customer.package.price %>
+  </div>
+</div>

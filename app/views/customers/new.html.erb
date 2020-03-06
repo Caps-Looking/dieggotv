@@ -1,0 +1,27 @@
+<div class="form-header">
+  <h1>Customer</h1>
+</div>
+<div class="form">
+  <%= simple_form_for @customer do |f| %>
+    <div class="form">
+      <%= f.input :name, input_html: { autocomplete: "off" } %>
+    </div>
+    <div class="form">
+      <%= f.input :cpf, input_html: { autocomplete: "off", data: { mask: :cpf } } %>
+    </div>
+    <div class="form">
+      <%= f.association :package, label_method: :to_s %>
+    </div>
+
+    <div class="form">
+      <%= f.simple_fields_for :customers_additional_services, f.object.customers_additional_services.build do |s| %>
+        <%= render 'additional_services/fields', f: s %>
+        <div class="links">
+          <%= link_to_add_association 'add additional service', f, :customers_additional_services, partial: 'additional_services/fields' %>
+        </div>
+      <% end %>
+    </div>
+
+    <%= f.submit "Save", class: "button" %>
+  <% end %>
+</div>

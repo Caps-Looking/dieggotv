@@ -1,0 +1,17 @@
+<div class="show">
+  <div class="show-header">
+    <h1>Additional Service</h1>
+  </div>
+  <div>
+    <label> Id: </label>
+    <%= @additional_service.id %> <%= link_to fa_icon("edit"), edit_additional_service_path(@additional_service) %>
+  </div>
+  <div>
+    <label> Name: </label>
+    <%= @additional_service.name %>
+  </div>
+  <div>
+    <label> Price: </label>
+    <%= @additional_service.price %>
+  </div>
+</div>
