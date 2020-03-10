@@ -168,6 +168,8 @@ body {
       align-items: center;
 
       span {
+        display: flex;
+        justify-content: center;
         color: red;
       }
 
