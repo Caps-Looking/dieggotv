@@ -18,7 +18,14 @@ class CustomersController < ApplicationController
 
   def create
     @customer = Customer.new customer_params
-    @customer.save ? redirect_to(@customer) : render(:new)
+    set_customer_packages_and_additional_services
+
+    if @customer.save
+      # GenerateBillsService.generate_bills(@customer)
+      redirect_to(@customer)
+    else
+      render(:new)
+    end
   end
 
   def update
@@ -31,8 +38,21 @@ class CustomersController < ApplicationController
   end
 
   private
+
+  def set_customer_packages_and_additional_services
+    @customer.customers_packages.each do |cp|
+      cp.price = cp.package.price
+    end
+
+    @customer.customers_additional_services.each do |cas|
+      cas.price = cas.additional_service.price
+    end
+  end
+
   def customer_params
-    params.require(:customer).permit(:name, :cpf, :package_id, customers_additional_services_attributes: [:additional_service_id, :id, :_destroy] )
+    params.require(:customer).permit(:name, :cpf, :package_id,
+                                     customers_additional_services_attributes: [:additional_service_id, :id, :_destroy],
+                                     customers_packages_attributes: [:package_id, :id, :destroy])
   end
 
   def set_customer
