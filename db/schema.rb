@@ -22,15 +22,17 @@ ActiveRecord::Schema.define(version: 20200310204320) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "bill", force: :cascade do |t|
-    t.integer  "customers_package_id",            null: false
-    t.integer  "customers_additional_service_id", null: false
+  create_table "bills", force: :cascade do |t|
+    t.integer  "customers_package_id"
+    t.integer  "customers_additional_service_id"
+    t.integer  "month_bill_id",                   null: false
     t.float    "amount"
     t.date     "due_date"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
-    t.index ["customers_additional_service_id"], name: "index_bill_on_customers_additional_service_id", using: :btree
-    t.index ["customers_package_id"], name: "index_bill_on_customers_package_id", using: :btree
+    t.index ["customers_additional_service_id"], name: "index_bills_on_customers_additional_service_id", using: :btree
+    t.index ["customers_package_id"], name: "index_bills_on_customers_package_id", using: :btree
+    t.index ["month_bill_id"], name: "index_bills_on_month_bill_id", using: :btree
   end
 
   create_table "customers", force: :cascade do |t|
@@ -60,6 +62,15 @@ ActiveRecord::Schema.define(version: 20200310204320) do
     t.index ["package_id"], name: "index_customers_packages_on_package_id", using: :btree
   end
 
+  create_table "month_bills", force: :cascade do |t|
+    t.integer  "year_bill_id"
+    t.float    "total_sum"
+    t.date     "due_date"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["year_bill_id"], name: "index_month_bills_on_year_bill_id", using: :btree
+  end
+
   create_table "packages", force: :cascade do |t|
     t.string   "name"
     t.float    "price"
@@ -67,10 +78,21 @@ ActiveRecord::Schema.define(version: 20200310204320) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "bill", "customers_additional_services"
-  add_foreign_key "bill", "customers_packages"
+  create_table "year_bills", force: :cascade do |t|
+    t.integer  "customer_id"
+    t.date     "competence"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["customer_id"], name: "index_year_bills_on_customer_id", using: :btree
+  end
+
+  add_foreign_key "bills", "customers_additional_services"
+  add_foreign_key "bills", "customers_packages"
+  add_foreign_key "bills", "month_bills"
   add_foreign_key "customers_additional_services", "additional_services"
   add_foreign_key "customers_additional_services", "customers"
   add_foreign_key "customers_packages", "customers"
   add_foreign_key "customers_packages", "packages"
+  add_foreign_key "month_bills", "year_bills"
+  add_foreign_key "year_bills", "customers"
 end

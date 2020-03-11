@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5a1b13b-bff3-4cda-83b0-a98cb9131959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/bill.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/customers_package.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/generate_bills_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20200310190726_customers_packages.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20200310204320_bill.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a2f58543-c317-4c79-aab7-d12c2846f80d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a2f58543-c317-4c79-aab7-d12c2846f80d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/month_bill.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/year_bill.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200310204318_year_bills.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200310204319_month_bills.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/customers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/customers_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/customer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/customer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/customers/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/customers/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/customers/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200304185442_customers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200304185442_customers.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200305144021_customers_additional_services.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200305144021_customers_additional_services.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/bill.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bill.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/generate_bills_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/generate_bills_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20200310204320_bill.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200310204320_bills.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,14 +100,16 @@
       <command value="rails g simple_form:install" />
       <command value="rails routes" />
       <command value="rails console" />
-      <command value="rails db:create db:migrate" />
       <command value="yarn add jquery-mask-plugin" />
       <command value="rails db:create" />
       <command value="rails " />
-      <command value="rails db:drop db:create db:migrate" />
       <command value="rails g migration" />
-      <command value="rails c" />
       <command value="rails db:migrate" />
+      <command value="bin/rails db:environment:set RAILS_ENV=development" />
+      <command value="rails db:drop" />
+      <command value="rails db:create db:migrate" />
+      <command value="rails c" />
+      <command value="rails db:drop db:create db:migrate" />
     </option>
   </component>
   <component name="RunManager" selected="Rails.Development: dieggotv">
@@ -254,7 +250,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@6049f9eb" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@76c47fbc" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -282,7 +278,7 @@
       <workItem from="1583505172712" duration="15922000" />
       <workItem from="1583783575710" duration="2376000" />
       <workItem from="1583857687656" duration="11944000" />
-      <workItem from="1583872888905" duration="2367000" />
+      <workItem from="1583872888905" duration="8303000" />
     </task>
     <servers />
   </component>
@@ -306,45 +302,45 @@
       <screen x="59" y="24" width="1861" height="1056" />
     </state>
     <state x="722" y="299" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/59.24.1861.1056@59.24.1861.1056" timestamp="1583347749152" />
-    <state width="1822" height="398" key="GridCell.Tab.0.bottom" timestamp="1583882712456">
+    <state width="1822" height="398" key="GridCell.Tab.0.bottom" timestamp="1583888729701">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1583882712456" />
+    <state width="1822" height="398" key="GridCell.Tab.0.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1583888729701" />
     <state width="1811" height="384" key="GridCell.Tab.0.bottom/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.0.center" timestamp="1583882712450">
+    <state width="1822" height="398" key="GridCell.Tab.0.center" timestamp="1583888729700">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.center/48.24.1872.1056@48.24.1872.1056" timestamp="1583882712450" />
+    <state width="1822" height="398" key="GridCell.Tab.0.center/48.24.1872.1056@48.24.1872.1056" timestamp="1583888729700" />
     <state width="1811" height="384" key="GridCell.Tab.0.center/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.0.left" timestamp="1583882712448">
+    <state width="1822" height="398" key="GridCell.Tab.0.left" timestamp="1583888729699">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.left/48.24.1872.1056@48.24.1872.1056" timestamp="1583882712448" />
+    <state width="1822" height="398" key="GridCell.Tab.0.left/48.24.1872.1056@48.24.1872.1056" timestamp="1583888729699" />
     <state width="1811" height="384" key="GridCell.Tab.0.left/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023110" />
-    <state width="1822" height="398" key="GridCell.Tab.0.right" timestamp="1583882712452">
+    <state width="1822" height="398" key="GridCell.Tab.0.right" timestamp="1583888729700">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.right/48.24.1872.1056@48.24.1872.1056" timestamp="1583882712452" />
+    <state width="1822" height="398" key="GridCell.Tab.0.right/48.24.1872.1056@48.24.1872.1056" timestamp="1583888729700" />
     <state width="1811" height="384" key="GridCell.Tab.0.right/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.1.bottom" timestamp="1583869944263">
+    <state width="1822" height="398" key="GridCell.Tab.1.bottom" timestamp="1583888729703">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1583869944263" />
+    <state width="1822" height="398" key="GridCell.Tab.1.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1583888729703" />
     <state width="1811" height="326" key="GridCell.Tab.1.bottom/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460863" />
-    <state width="1822" height="398" key="GridCell.Tab.1.center" timestamp="1583869944262">
+    <state width="1822" height="398" key="GridCell.Tab.1.center" timestamp="1583888729702">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.center/48.24.1872.1056@48.24.1872.1056" timestamp="1583869944262" />
+    <state width="1822" height="398" key="GridCell.Tab.1.center/48.24.1872.1056@48.24.1872.1056" timestamp="1583888729702" />
     <state width="1811" height="326" key="GridCell.Tab.1.center/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460862" />
-    <state width="1822" height="398" key="GridCell.Tab.1.left" timestamp="1583869944261">
+    <state width="1822" height="398" key="GridCell.Tab.1.left" timestamp="1583888729702">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.left/48.24.1872.1056@48.24.1872.1056" timestamp="1583869944261" />
+    <state width="1822" height="398" key="GridCell.Tab.1.left/48.24.1872.1056@48.24.1872.1056" timestamp="1583888729702" />
     <state width="1811" height="326" key="GridCell.Tab.1.left/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460862" />
-    <state width="1822" height="398" key="GridCell.Tab.1.right" timestamp="1583869944262">
+    <state width="1822" height="398" key="GridCell.Tab.1.right" timestamp="1583888729703">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.right/48.24.1872.1056@48.24.1872.1056" timestamp="1583869944262" />
+    <state width="1822" height="398" key="GridCell.Tab.1.right/48.24.1872.1056@48.24.1872.1056" timestamp="1583888729703" />
     <state width="1811" height="326" key="GridCell.Tab.1.right/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460863" />
     <state width="264" height="563" key="HiddenNamespacesPopup" timestamp="1583420589906">
       <screen x="59" y="24" width="1861" height="1056" />
@@ -363,23 +359,24 @@
       <screen x="59" y="24" width="1861" height="1056" />
     </state>
     <state x="753" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/59.24.1861.1056@59.24.1861.1056" timestamp="1583527842387" />
-    <state x="630" y="75" width="719" height="954" key="find.popup" timestamp="1583516149073">
-      <screen x="59" y="24" width="1861" height="1056" />
+    <state x="622" y="75" width="724" height="954" key="find.popup" timestamp="1583887267424">
+      <screen x="48" y="24" width="1872" height="1056" />
     </state>
+    <state x="622" y="75" width="724" height="954" key="find.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1583887267424" />
     <state x="630" y="75" width="719" height="954" key="find.popup/59.24.1861.1056@59.24.1861.1056" timestamp="1583516149073" />
-    <state x="646" y="253" width="676" height="678" key="run.anything.popup" timestamp="1583882705042">
+    <state x="646" y="253" width="676" height="678" key="run.anything.popup" timestamp="1583888388170">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state x="646" y="253" width="676" height="678" key="run.anything.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1583882705042" />
+    <state x="646" y="253" width="676" height="678" key="run.anything.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1583888388170" />
     <state x="653" y="253" width="672" height="678" key="run.anything.popup/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023133" />
-    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup" timestamp="1583882729908">
+    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup" timestamp="1583887245439">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1583882729908" />
+    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1583887245439" />
     <state x="652" y="257" width="672" height="678" key="search.everywhere.popup/59.24.1861.1056@59.24.1861.1056" timestamp="1583527189494" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dieggotv@Development__dieggotv.rcov" NAME="Development: dieggotv Coverage Results" MODIFIED="1583869499378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@Development__dieggotv.rcov" NAME="Development: dieggotv Coverage Results" MODIFIED="1583888481550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Rails_console__dieggotv.rcov" NAME="Rails console: dieggotv Coverage Results" MODIFIED="1583414011359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
   </component>
 </project>
