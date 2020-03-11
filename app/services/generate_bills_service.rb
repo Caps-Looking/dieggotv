@@ -1,18 +1,18 @@
 class GenerateBillsService
 
-  def self.generate(customer)
-    new(customer).generate
+  def self.perform(customer)
+    new(customer).perform
   end
 
   def initialize(customer)
     @customer = customer
-    @customer_packages = CustomersPackage.where(customer_id: customer.id)
-    @customer_additional_services = CustomersAdditionalService.where(customer_id: customer.id)
+    @customer_packages = customer.customers_packages
+    @customer_additional_services = customer.customers_additional_services
   end
 
   attr_accessor :customer, :customer_additional_services, :customer_packages
 
-  def generate
+  def perform
     year_bill = generate_year_bill
     sum = calculate_month_amount
     generate_month_bill_and_bills(year_bill, sum)
