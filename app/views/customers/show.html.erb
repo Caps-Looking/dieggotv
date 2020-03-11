@@ -1,36 +1,65 @@
+<div class="show-header">
+  <h1>Customer</h1>
+</div>
 <div class="show">
-  <div class="show-header">
-    <h1>Customer</h1>
-  </div>
-  <div>
-    <label> Id: </label>
-    <%= @customer.id %> <%= link_to fa_icon("edit"), edit_customer_path(@customer) %>
-  </div>
-  <div>
-    <label> Name: </label>
-    <%= @customer.name %>
-  </div>
-  <div>
-    <label> Cpf: </label>
-    <%= @customer.cpf %>
-  </div>
-  <div>
-    <label> Package: </label>
-<!--    <%#= @customer.package.name %> - $<%#= @customer.package.price %>-->
-    <% @customer.customers_packages.each do |p| %>
+  <div class="info">
+    <div>
+      <label> Id: </label>
+      <%= @customer.id %> <%= link_to fa_icon("edit"), edit_customer_path(@customer) %>
+    </div>
+    <div>
+      <label> Name: </label>
+      <%= @customer.name %>
+    </div>
+    <div>
+      <label> Cpf: </label>
+      <%= @customer.cpf %>
+    </div>
+    <div>
+      <label> Package: </label>
+      <% @customer.customers_packages.each do |p| %>
         <%= p.package.name %> - $<%= p.package.price %>
+      <% end %>
+    </div>
+
+    <% unless @customer.customers_additional_services.empty? %>
+      <div>
+        <label> Additional Services: </label>
+        <% @customer.customers_additional_services.each do |as| %>
+          <div class="services">
+            * <%= as.additional_service.name %> - $<%= as.additional_service.price %>
+          </div>
+        <% end %>
+      </div>
     <% end %>
   </div>
 
-  <% unless @customer.customers_additional_services.empty? %>
-    <div>
-      <label> Additional Services: </label>
-      <% @customer.customers_additional_services.each do |as| %>
-        <div class="services">
-          * <%= as.additional_service.name %> - $<%= as.additional_service.price %>
-        </div>
-      <% end %>
-    </div>
-  <% end %>
+  <div class="bills">
+    <% @customer.year_bills.each do |yb| %>
+      <div class="competence">
+        Init Date: <%= yb.init_date %> End Date: <%= yb.end_date %>
+      </div>
+      <div class="month-bills">
+        <% yb.month_bills.each do |mb| %>
+          <div class="month-bill">
+            Value: <%= mb.total_sum %>
+            Due Date: <%= mb.due_date %>
+            <% mb.bills.each do |b| %>
+              <div class="bill">
+                <% unless b.customers_package == nil %>
+                  Package: <%= b.customers_package.package.name %>
+                  $<%= b.customers_package.price %>
+                <% end %>
+                <% unless b.customers_additional_service == nil %>
+                  Additional Service: <%= b.customers_additional_service.additional_service.name %>
+                  $<%= b.customers_additional_service.price %>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 
 </div>

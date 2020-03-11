@@ -116,6 +116,8 @@ body {
   }
 
   .show {
+    display: flex;
+    justify-content: space-between;
     font-size: 18px;
     margin: 16px 16px;
 
@@ -150,6 +152,81 @@ body {
 
     .services {
       margin: 20px 20px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .bills {
+      transition: all .6s;
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .month-bills {
+        max-height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .month-bills-active {
+        max-height: 1000px;
+      }
+
+      .month-bill-active {
+        background-color: $base-color;
+        color: white;
+        .bill {
+          border: 1px solid $base-color;
+          padding: 10px 10px 10px 32px;
+          margin: 8px 0;
+          max-height: 40px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .competence-active {
+        background-color: $base-color;
+        color: white;
+      }
+
+      .competence, .month-bill, .bill {
+        border: 1px solid $base-color;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover {
+          background-color: $base-color;
+          color: white;
+        }
+      }
+
+      .month-bill {
+        margin-left: 16px;
+        overflow: hidden;
+      }
+
+      .bill {
+        max-height: 0;
+        margin: 0;
+        overflow: hidden;
+        background-color: white;
+        color: black;
+        padding: 0 0 0 47px;
+        border: 0;
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
     }
   }
 

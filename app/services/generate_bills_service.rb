@@ -6,11 +6,9 @@ class GenerateBillsService
 
   def initialize(customer)
     @customer = customer
-    @customer_packages = customer.customers_packages
-    @customer_additional_services = customer.customers_additional_services
   end
 
-  attr_accessor :customer, :customer_additional_services, :customer_packages
+  attr_accessor :customer
 
   def perform
     year_bill = generate_year_bill
@@ -21,11 +19,11 @@ class GenerateBillsService
   private
 
   def generate_year_bill
-    YearBill.create!(competence: 1.year.from_now, customer: customer)
+    YearBill.create!(init_date: Date.today, end_date: 1.year.from_now, customer: customer)
   end
 
   def calculate_month_amount
-    customer_packages.sum(&:price) + customer_additional_services.sum(&:price)
+    customer.customers_packages.sum(&:price) + customer.customers_additional_services.sum(&:price)
   end
 
   def generate_month_bill_and_bills(year_bill, sum)
@@ -38,14 +36,14 @@ class GenerateBillsService
   end
 
   def generate_bills(month_bill)
-    customer_packages.each do |cp|
+    customer.customers_packages.each do |cp|
       amount = cp.price
       due_date = month_bill.due_date
 
       Bill.create!(customers_package: cp, amount: amount, month_bill: month_bill, due_date: due_date)
     end
 
-    customer_additional_services.each do |cas|
+    customer.customers_additional_services.each do |cas|
       amount = cas.price
       due_date = month_bill.due_date
 

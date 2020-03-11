@@ -80,7 +80,8 @@ ActiveRecord::Schema.define(version: 20200310204320) do
 
   create_table "year_bills", force: :cascade do |t|
     t.integer  "customer_id"
-    t.date     "competence"
+    t.date     "init_date"
+    t.date     "end_date"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["customer_id"], name: "index_year_bills_on_customer_id", using: :btree

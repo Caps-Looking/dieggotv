@@ -21,7 +21,7 @@ class CustomersController < ApplicationController
     set_customer_packages_and_additional_services
 
     if @customer.save
-      GenerateBillsService.generate(@customer)
+      GenerateBillsService.perform(@customer)
       redirect_to(@customer)
     else
       render(:new)
