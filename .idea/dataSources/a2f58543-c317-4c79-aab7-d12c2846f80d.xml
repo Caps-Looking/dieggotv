@@ -23,8 +23,8 @@
       <IntrospectionStateNumber>5664</IntrospectionStateNumber>
       <Relations>sequence|table|36696|36698|1
 sequence|table|36713|36715|1
-sequence|table|36650|36652|1
 sequence|table|36661|36663|1
+sequence|table|36650|36652|1
 </Relations>
     </database>
     <database id="6" parent="1" name="dieggotv_test">

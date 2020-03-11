@@ -1,74 +1,56 @@
 class GenerateBillsService
 
   def self.generate(customer)
-    year_bill = generate_year_bill(customer)
+    new(customer).generate
+  end
 
-    customer_packages = CustomersPackage.where(customer_id: customer.id)
-    customer_additional_services = CustomersAdditionalService.where(customer_id: customer.id)
+  def initialize(customer)
+    @customer = customer
+    @customer_packages = CustomersPackage.where(customer_id: customer.id)
+    @customer_additional_services = CustomersAdditionalService.where(customer_id: customer.id)
+  end
 
-    generate_month_bill(customer_additional_services, customer_packages, year_bill)
+  attr_accessor :customer, :customer_additional_services, :customer_packages
+
+  def generate
+    year_bill = generate_year_bill
+    sum = calculate_month_amount
+    generate_month_bill_and_bills(year_bill, sum)
   end
 
   private
 
-  def self.generate_month_bill(customer_additional_services, customer_packages, year_bill)
-    sum = calculate_month_amount(customer_additional_services, customer_packages)
+  def generate_year_bill
+    YearBill.create!(competence: 1.year.from_now, customer: customer)
+  end
 
+  def calculate_month_amount
+    customer_packages.sum(&:price) + customer_additional_services.sum(&:price)
+  end
+
+  def generate_month_bill_and_bills(year_bill, sum)
     (1..12).each do |i|
-      month_bill = MonthBill.new
-      month_bill.total_sum = sum
-      month_bill.due_date = i.month.from_now
-      month_bill.year_bill = year_bill
+      due_date = i.month.from_now
+      month_bill = MonthBill.create!(total_sum: sum, due_date: due_date, year_bill: year_bill)
 
-      month_bill.save
-
-      generate_bills(customer_additional_services, customer_packages, month_bill)
+      generate_bills(month_bill)
     end
   end
 
-  def self.generate_bills(customer_additional_services, customer_packages, month_bill)
+  def generate_bills(month_bill)
     customer_packages.each do |cp|
-      bill = Bill.new
-      bill.customers_package = cp
-      bill.amount = cp.package.price
-      bill.month_bill = month_bill
-      bill.due_date = month_bill.due_date
+      amount = cp.price
+      due_date = month_bill.due_date
 
-      bill.save
+      Bill.create!(customers_package: cp, amount: amount, month_bill: month_bill, due_date: due_date)
     end
 
     customer_additional_services.each do |cas|
-      bill = Bill.new
-      bill.customers_additional_service = cas
-      bill.amount = cas.additional_service.price
-      bill.month_bill = month_bill
-      bill.due_date = month_bill.due_date
+      amount = cas.price
+      due_date = month_bill.due_date
 
-      bill.save
+      Bill.create!(customers_additional_service: cas, amount: amount, month_bill: month_bill, due_date: due_date)
     end
-  end
-
-  def self.calculate_month_amount(customer_additional_services, customer_packages)
-    sum = 0
-    customer_packages.each do |package|
-      sum = sum + package.price
-    end
-
-    customer_additional_services.each do |as|
-      sum = sum + as.price
-    end
-
-    sum
-  end
-
-  def self.generate_year_bill(customer)
-    year_bill = YearBill.new
-    year_bill.competence = 1.year.from_now
-    year_bill.customer = customer
-
-    year_bill.save
-
-    year_bill
   end
 
 end
