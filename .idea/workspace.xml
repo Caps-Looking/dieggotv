@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5a1b13b-bff3-4cda-83b0-a98cb9131959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/services/bill_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/month_bill_service.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/generate_bills_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/generate_bills_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/month_bill_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/month_bill_service.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +274,8 @@
       <workItem from="1583857687656" duration="11944000" />
       <workItem from="1583872888905" duration="9331000" />
       <workItem from="1583926314593" duration="17804000" />
-      <workItem from="1583954621827" duration="3957000" />
+      <workItem from="1583954621827" duration="4062000" />
+      <workItem from="1584018668031" duration="1700000" />
     </task>
     <servers />
   </component>
@@ -300,45 +299,45 @@
       <screen x="59" y="24" width="1861" height="1056" />
     </state>
     <state x="722" y="299" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/59.24.1861.1056@59.24.1861.1056" timestamp="1583347749152" />
-    <state width="1822" height="398" key="GridCell.Tab.0.bottom" timestamp="1583950120470">
+    <state width="1822" height="398" key="GridCell.Tab.0.bottom" timestamp="1584018828107">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1583950120470" />
+    <state width="1822" height="398" key="GridCell.Tab.0.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584018828107" />
     <state width="1811" height="384" key="GridCell.Tab.0.bottom/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.0.center" timestamp="1583950120467">
+    <state width="1822" height="398" key="GridCell.Tab.0.center" timestamp="1584018828106">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.center/48.24.1872.1056@48.24.1872.1056" timestamp="1583950120467" />
+    <state width="1822" height="398" key="GridCell.Tab.0.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584018828106" />
     <state width="1811" height="384" key="GridCell.Tab.0.center/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.0.left" timestamp="1583950120465">
+    <state width="1822" height="398" key="GridCell.Tab.0.left" timestamp="1584018828106">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.left/48.24.1872.1056@48.24.1872.1056" timestamp="1583950120465" />
+    <state width="1822" height="398" key="GridCell.Tab.0.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584018828106" />
     <state width="1811" height="384" key="GridCell.Tab.0.left/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023110" />
-    <state width="1822" height="398" key="GridCell.Tab.0.right" timestamp="1583950120469">
+    <state width="1822" height="398" key="GridCell.Tab.0.right" timestamp="1584018828107">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.right/48.24.1872.1056@48.24.1872.1056" timestamp="1583950120469" />
+    <state width="1822" height="398" key="GridCell.Tab.0.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584018828107" />
     <state width="1811" height="384" key="GridCell.Tab.0.right/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.1.bottom" timestamp="1583950120474">
+    <state width="1822" height="398" key="GridCell.Tab.1.bottom" timestamp="1584018828108">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1583950120474" />
+    <state width="1822" height="398" key="GridCell.Tab.1.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584018828108" />
     <state width="1811" height="326" key="GridCell.Tab.1.bottom/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460863" />
-    <state width="1822" height="398" key="GridCell.Tab.1.center" timestamp="1583950120472">
+    <state width="1822" height="398" key="GridCell.Tab.1.center" timestamp="1584018828107">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.center/48.24.1872.1056@48.24.1872.1056" timestamp="1583950120472" />
+    <state width="1822" height="398" key="GridCell.Tab.1.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584018828107" />
     <state width="1811" height="326" key="GridCell.Tab.1.center/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460862" />
-    <state width="1822" height="398" key="GridCell.Tab.1.left" timestamp="1583950120472">
+    <state width="1822" height="398" key="GridCell.Tab.1.left" timestamp="1584018828107">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.left/48.24.1872.1056@48.24.1872.1056" timestamp="1583950120472" />
+    <state width="1822" height="398" key="GridCell.Tab.1.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584018828107" />
     <state width="1811" height="326" key="GridCell.Tab.1.left/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460862" />
-    <state width="1822" height="398" key="GridCell.Tab.1.right" timestamp="1583950120473">
+    <state width="1822" height="398" key="GridCell.Tab.1.right" timestamp="1584018828108">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.right/48.24.1872.1056@48.24.1872.1056" timestamp="1583950120473" />
+    <state width="1822" height="398" key="GridCell.Tab.1.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584018828108" />
     <state width="1811" height="326" key="GridCell.Tab.1.right/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460863" />
     <state width="264" height="563" key="HiddenNamespacesPopup" timestamp="1583420589906">
       <screen x="59" y="24" width="1861" height="1056" />
@@ -375,14 +374,14 @@
     </state>
     <state x="646" y="253" width="676" height="678" key="run.anything.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1583949939960" />
     <state x="653" y="253" width="672" height="678" key="run.anything.popup/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023133" />
-    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup" timestamp="1583950281976">
+    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup" timestamp="1584018701467">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1583950281976" />
+    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1584018701467" />
     <state x="652" y="257" width="672" height="678" key="search.everywhere.popup/59.24.1861.1056@59.24.1861.1056" timestamp="1583527189494" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dieggotv@Development__dieggotv.rcov" NAME="Development: dieggotv Coverage Results" MODIFIED="1583949968478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@Development__dieggotv.rcov" NAME="Development: dieggotv Coverage Results" MODIFIED="1584018742060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Rails_console__dieggotv.rcov" NAME="Rails console: dieggotv Coverage Results" MODIFIED="1583414011359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
   </component>
 </project>

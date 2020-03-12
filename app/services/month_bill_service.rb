@@ -1,7 +1,7 @@
 class MonthBillService
 
   def self.generate_month_bills(customer, year_bill)
-    new(customer, year_bill).perform
+    new(customer, year_bill).generate_month_bills
   end
 
   def initialize(customer, year_bill)
