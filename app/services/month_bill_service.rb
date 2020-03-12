@@ -19,7 +19,7 @@ class MonthBillService
   private
 
   def calculate_amount
-    customer.customers_packages.sum(&:price) + customer.customers_additional_services.sum(&:price)
+    customer.customers_package + customer.customers_additional_services.sum(&:price)
   end
 
   def generate_month_bill_and_bills(sum)

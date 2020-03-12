@@ -10,6 +10,7 @@
       <th>Id</th>
       <th>Name</th>
       <th>Cpf</th>
+      <th>Package</th>
       <th>Actions</th>
     </tr>
     <% @customers.each do |customer| %>
@@ -17,6 +18,7 @@
         <td><%= customer.id %></td>
         <td><%= customer.name %></td>
         <td><%= customer.cpf %></td>
+        <td><%= customer.customers_package.package.name %></td>
         <td>
           <%= link_to fa_icon("eye"), customer, method: :get %>
           <%= link_to fa_icon("edit"), edit_customer_path(customer) %>

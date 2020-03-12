@@ -11,12 +11,11 @@ class BillService
   attr_reader :customer, :month_bill
 
   def generate_bills
-    customer.customers_packages.each do |cp|
-      amount = cp.price
-      due_date = month_bill.due_date
+    cp = customer.customers_package
+    amount = cp.price
+    due_date = month_bill.due_date
 
-      Bill.create!(customers_package: cp, amount: amount, month_bill: month_bill, due_date: due_date)
-    end
+    Bill.create!(customers_package: cp, amount: amount, month_bill: month_bill, due_date: due_date)
 
     customer.customers_additional_services.each do |cas|
       amount = cas.price

@@ -10,7 +10,7 @@
       <%= f.input :cpf, input_html: { autocomplete: "off", data: { mask: :cpf } } %>
     </div>
     <div class="form">
-      <%= f.simple_fields_for :customers_packages, f.object.customers_packages.build do |cp| %>
+      <%= f.simple_fields_for :customers_package, f.object.build_customers_package do |cp| %>
         <%= cp.association :package, label_method: :to_s %>
       <% end %>
     </div>
