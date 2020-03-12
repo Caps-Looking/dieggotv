@@ -41,7 +41,7 @@
         <% yb.month_bills.each do |mb| %>
           <div class="month-bill">
             Value: <%= mb.total_sum %>
-            Due Date: <%= mb.due_date %>
+            Due Date: <%= mb.due_date_for %>
             <% mb.bills.each do |b| %>
               <div class="bill">
                 <% unless b.customers_package == nil %>
