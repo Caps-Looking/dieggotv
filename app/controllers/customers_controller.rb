@@ -1,7 +1,7 @@
 class CustomersController < ApplicationController
 
   def index
-    @customers = Customer.all
+    @customers = Customer.all.decorate
   end
 
   def new
@@ -13,11 +13,11 @@ class CustomersController < ApplicationController
   end
 
   def show
-    set_customer
+    @customer = Customer.find(params[:id]).decorate
   end
 
   def create
-    @customer = Customer.new customer_params
+    @customer = Customer.new customer_create_params
     set_customer_package_and_additional_services
 
     if @customer.save
@@ -29,6 +29,8 @@ class CustomersController < ApplicationController
   end
 
   def update
+    set_customer
+    @customer.update(customer_update_params) ? redirect_to(@customer) : render(:edit)
   end
 
   def destroy
@@ -49,10 +51,17 @@ class CustomersController < ApplicationController
     end
   end
 
-  def customer_params
-    params.require(:customer).permit(:name, :cpf, :package_id,
-                                     customers_additional_services_attributes: [:additional_service_id, :id, :_destroy],
-                                     customers_package_attributes: [:package_id, :id, :destroy])
+  def customer_create_params
+    params.require(:customer).permit(
+        :name,
+        :cpf,
+        customers_additional_services_attributes: [:additional_service_id, :id, :_destroy],
+        customers_package_attributes: [:package_id, :id, :destroy]
+    )
+  end
+
+  def customer_update_params
+    params.require(:customer).permit(:name, :cpf)
   end
 
   def set_customer

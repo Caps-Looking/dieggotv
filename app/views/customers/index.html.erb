@@ -17,7 +17,7 @@
       <tr class=package>
         <td><%= customer.id %></td>
         <td><%= customer.name %></td>
-        <td><%= customer.cpf %></td>
+        <td><%= customer.cpf_masked %></td>
         <td><%= customer.customers_package.package.name %></td>
         <td>
           <%= link_to fa_icon("eye"), customer, method: :get %>

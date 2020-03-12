@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5a1b13b-bff3-4cda-83b0-a98cb9131959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/services/billing_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/generate_bill_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dieggotv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dieggotv.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/customers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/customers_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/bill_service.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/generate_bills_service.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/month_bill_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/generate_month_bill_service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/year_bill_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/generate_year_bill_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/decorators/additional_service_decorator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators/additional_service_decorator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/decorators/customer_decorator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators/customer_decorator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/decorators/package_decorator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators/package_decorator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/additional_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/additional_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/customer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/customer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/package.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/package.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/additional_services/_fields.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/additional_services/_fields.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/customers/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/customers/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/customers/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200310204319_month_bills.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200310204319_month_bills.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200310204320_bills.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200310204320_bills.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/additional_service_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/additional_service_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/package_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/package_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,9 +123,15 @@
       <command value="rails db:drop db:create db:migrate" />
       <command value="rails db:seed" />
       <command value="rails db:drop db:create db:migrate db:seed" />
+      <command value="rails g rspec:install" />
+      <command value="rails g enerate rspec:install" />
+      <command value="rails generate rspec:install" />
+      <command value="rails g rspec:model" />
+      <command value="  rails generate draper:install " />
+      <command value="rails g decorator" />
     </option>
   </component>
-  <component name="RunManager" selected="Rails.Development: dieggotv">
+  <component name="RunManager" selected="RSpec.AdditionalService">
     <configuration name="Rails console: dieggotv" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="dieggotv" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -134,6 +149,142 @@
       <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/rails" />
       <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console -- --prompt simple" />
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AdditionalService" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="dieggotv" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/additional_service_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="AdditionalService" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Package Validations" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="dieggotv" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/package_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Package Validations" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Package to_s" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="dieggotv" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/package_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Package to_s" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Package" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="dieggotv" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/package_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Package" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
     <configuration name="Development: dieggotv" type="RailsRunConfigurationType" factoryName="Rails">
@@ -235,8 +386,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="IRB console.Rails console: dieggotv" />
-        <item itemvalue="IRB console.Rails console: dieggotv" />
+        <item itemvalue="RSpec.AdditionalService" />
+        <item itemvalue="RSpec.Package" />
+        <item itemvalue="RSpec.Package Validations" />
+        <item itemvalue="RSpec.Package to_s" />
         <item itemvalue="IRB console.Rails console: dieggotv" />
       </list>
     </recent_temporary>
@@ -285,7 +438,7 @@
       <workItem from="1583872888905" duration="9331000" />
       <workItem from="1583926314593" duration="17804000" />
       <workItem from="1583954621827" duration="4062000" />
-      <workItem from="1584018668031" duration="12838000" />
+      <workItem from="1584018668031" duration="20514000" />
     </task>
     <servers />
   </component>
@@ -309,45 +462,45 @@
       <screen x="59" y="24" width="1861" height="1056" />
     </state>
     <state x="722" y="299" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/59.24.1861.1056@59.24.1861.1056" timestamp="1583347749152" />
-    <state width="1822" height="398" key="GridCell.Tab.0.bottom" timestamp="1584035733070">
+    <state width="1822" height="398" key="GridCell.Tab.0.bottom" timestamp="1584044061031">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584035733070" />
+    <state width="1822" height="398" key="GridCell.Tab.0.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584044061031" />
     <state width="1811" height="384" key="GridCell.Tab.0.bottom/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.0.center" timestamp="1584035733070">
+    <state width="1822" height="398" key="GridCell.Tab.0.center" timestamp="1584044061030">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584035733070" />
+    <state width="1822" height="398" key="GridCell.Tab.0.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584044061030" />
     <state width="1811" height="384" key="GridCell.Tab.0.center/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.0.left" timestamp="1584035733069">
+    <state width="1822" height="398" key="GridCell.Tab.0.left" timestamp="1584044061030">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584035733069" />
+    <state width="1822" height="398" key="GridCell.Tab.0.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584044061030" />
     <state width="1811" height="384" key="GridCell.Tab.0.left/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023110" />
-    <state width="1822" height="398" key="GridCell.Tab.0.right" timestamp="1584035733070">
+    <state width="1822" height="398" key="GridCell.Tab.0.right" timestamp="1584044061031">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.0.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584035733070" />
+    <state width="1822" height="398" key="GridCell.Tab.0.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584044061031" />
     <state width="1811" height="384" key="GridCell.Tab.0.right/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="398" key="GridCell.Tab.1.bottom" timestamp="1584035507817">
+    <state width="1822" height="398" key="GridCell.Tab.1.bottom" timestamp="1584044061032">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584035507817" />
+    <state width="1822" height="398" key="GridCell.Tab.1.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584044061032" />
     <state width="1811" height="326" key="GridCell.Tab.1.bottom/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460863" />
-    <state width="1822" height="398" key="GridCell.Tab.1.center" timestamp="1584035507816">
+    <state width="1822" height="398" key="GridCell.Tab.1.center" timestamp="1584044061031">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584035507816" />
+    <state width="1822" height="398" key="GridCell.Tab.1.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584044061031" />
     <state width="1811" height="326" key="GridCell.Tab.1.center/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460862" />
-    <state width="1822" height="398" key="GridCell.Tab.1.left" timestamp="1584035507816">
+    <state width="1822" height="398" key="GridCell.Tab.1.left" timestamp="1584044061031">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584035507816" />
+    <state width="1822" height="398" key="GridCell.Tab.1.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584044061031" />
     <state width="1811" height="326" key="GridCell.Tab.1.left/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460862" />
-    <state width="1822" height="398" key="GridCell.Tab.1.right" timestamp="1584035507817">
+    <state width="1822" height="398" key="GridCell.Tab.1.right" timestamp="1584044061031">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="398" key="GridCell.Tab.1.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584035507817" />
+    <state width="1822" height="398" key="GridCell.Tab.1.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584044061031" />
     <state width="1811" height="326" key="GridCell.Tab.1.right/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460863" />
     <state width="264" height="563" key="HiddenNamespacesPopup" timestamp="1583420589906">
       <screen x="59" y="24" width="1861" height="1056" />
@@ -374,24 +527,28 @@
       <screen x="59" y="24" width="1861" height="1056" />
     </state>
     <state x="753" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/59.24.1861.1056@59.24.1861.1056" timestamp="1583527842387" />
-    <state x="622" y="75" width="724" height="954" key="find.popup" timestamp="1583887267424">
+    <state x="622" y="75" width="724" height="954" key="find.popup" timestamp="1584039680516">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state x="622" y="75" width="724" height="954" key="find.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1583887267424" />
+    <state x="622" y="75" width="724" height="954" key="find.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1584039680516" />
     <state x="630" y="75" width="719" height="954" key="find.popup/59.24.1861.1056@59.24.1861.1056" timestamp="1583516149073" />
-    <state x="646" y="253" width="676" height="678" key="run.anything.popup" timestamp="1584035507832">
+    <state x="646" y="253" width="676" height="678" key="run.anything.popup" timestamp="1584041798531">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state x="646" y="253" width="676" height="678" key="run.anything.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1584035507832" />
+    <state x="646" y="253" width="676" height="678" key="run.anything.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1584041798531" />
     <state x="653" y="253" width="672" height="678" key="run.anything.popup/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023133" />
-    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup" timestamp="1584035449068">
+    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup" timestamp="1584043544778">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1584035449068" />
+    <state x="645" y="257" width="676" height="678" key="search.everywhere.popup/48.24.1872.1056@48.24.1872.1056" timestamp="1584043544778" />
     <state x="652" y="257" width="672" height="678" key="search.everywhere.popup/59.24.1861.1056@59.24.1861.1056" timestamp="1583527189494" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dieggotv@Development__dieggotv.rcov" NAME="Development: dieggotv Coverage Results" MODIFIED="1584035733053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@Package_Validations.rcov" NAME="Package Validations Coverage Results" MODIFIED="1584044025499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@Development__dieggotv.rcov" NAME="Development: dieggotv Coverage Results" MODIFIED="1584042446980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@Package.rcov" NAME="Package Coverage Results" MODIFIED="1584044043473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Rails_console__dieggotv.rcov" NAME="Rails console: dieggotv Coverage Results" MODIFIED="1583414011359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@AdditionalService.rcov" NAME="AdditionalService Coverage Results" MODIFIED="1584044061015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@Package_to_s.rcov" NAME="Package to_s Coverage Results" MODIFIED="1584038540739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
   </component>
 </project>

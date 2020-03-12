@@ -11,7 +11,7 @@
     </div>
     <div class="form">
       <%= f.simple_fields_for :customers_package, f.object.build_customers_package do |cp| %>
-        <%= cp.association :package, label_method: :to_s %>
+        <%= cp.association :package, collection: Package.all.decorate, label_method: :description %>
       <% end %>
     </div>
 
