@@ -20,7 +20,6 @@ class CustomersController < ApplicationController
     @customer = Customer.new customer_params
     set_customer_package_and_additional_services
 
-    binding.pry
     if @customer.save
       GenerateBillsService.perform(@customer)
       redirect_to(@customer)

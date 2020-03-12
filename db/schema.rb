@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20200310204320) do
   create_table "bills", force: :cascade do |t|
     t.integer  "customers_package_id"
     t.integer  "customers_additional_service_id"
-    t.integer  "month_bill_id",                   null: false
+    t.integer  "month_bill_id"
     t.float    "amount"
     t.date     "due_date"
     t.datetime "created_at",                      null: false
@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(version: 20200310204320) do
     t.integer  "customer_id"
     t.date     "init_date"
     t.date     "end_date"
+    t.float    "total_sum"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["customer_id"], name: "index_year_bills_on_customer_id", using: :btree

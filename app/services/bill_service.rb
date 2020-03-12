@@ -1,27 +1,38 @@
 class BillService
-  def self.generate_bills(customer, month_bill)
-    new(customer, month_bill).generate_bills
+  def self.generate_bills(customer, due_date)
+    new(customer, due_date).generate_bills
   end
 
-  def initialize(customer, month_bill)
+  def initialize(customer, due_date)
     @customer = customer
-    @month_bill = month_bill
+    @due_date = due_date
   end
 
-  attr_reader :customer, :month_bill
+  attr_reader :customer, :due_date
 
   def generate_bills
+    bills = []
+
+    bills << generate_bills_by_package
+    bills << generate_bills_by_additional_service
+
+    bills.flatten
+  end
+
+  private
+
+  def generate_bills_by_package
     cp = customer.customers_package
     amount = cp.price
-    due_date = month_bill.due_date
 
-    Bill.create!(customers_package: cp, amount: amount, month_bill: month_bill, due_date: due_date)
+    Bill.create!(customers_package: cp, amount: amount, due_date: due_date)
+  end
 
-    customer.customers_additional_services.each do |cas|
+  def generate_bills_by_additional_service
+    customer.customers_additional_services.map do |cas|
       amount = cas.price
-      due_date = month_bill.due_date
 
-      Bill.create!(customers_additional_service: cas, amount: amount, month_bill: month_bill, due_date: due_date)
+      Bill.create!(customers_additional_service: cas, amount: amount, due_date: due_date)
     end
   end
 

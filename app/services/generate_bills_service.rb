@@ -11,14 +11,16 @@ class GenerateBillsService
   attr_reader :customer
 
   def perform
-    year_bill = generate_year_bill
-    MonthBillService.generate_month_bills(customer, year_bill)
-  end
+    months = []
 
-  private
+    (1..12).each do |i|
+      due_date = i.month.from_now
 
-  def generate_year_bill
-    YearBill.create!(init_date: Date.today, end_date: 1.year.from_now, customer: customer)
+      bills = BillService.generate_bills(customer, due_date)
+      months << MonthBillService.generate_month_bills(bills, due_date)
+    end
+
+    YearBillService.generate_year_bill(months, customer)
   end
 
 end

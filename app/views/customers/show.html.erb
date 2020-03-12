@@ -35,7 +35,7 @@
   <div class="bills">
     <% @customer.year_bills.each do |yb| %>
       <div class="competence">
-        Init Date: <%= yb.init_date %> End Date: <%= yb.end_date %>
+        Init Date: <%= yb.init_date %> End Date: <%= yb.end_date %> Total: $<%= yb.total_sum %>
       </div>
       <div class="month-bills">
         <% yb.month_bills.each do |mb| %>
