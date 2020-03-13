@@ -33,6 +33,7 @@ class PackagesController < ApplicationController
   end
 
   private
+
   def package_params
     params.require(:package).permit(:name, :price)
   end

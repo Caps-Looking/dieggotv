@@ -22,15 +22,13 @@ gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'draper'
 gem 'cpf_cnpj'
-gem 'factory_bot_rails'
 
 group :development, :test do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'rspec-rails'
-end
-
-group :test do
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
   gem 'shoulda-matchers'
 end
 
