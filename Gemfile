@@ -18,10 +18,11 @@ gem 'jquery_mask_rails', '~> 0.1.0'
 gem 'cocoon'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'draper'
-gem "cpf_cnpj"
+gem 'cpf_cnpj'
+gem 'factory_bot_rails'
 
 group :development, :test do
   gem 'pry-rails'
