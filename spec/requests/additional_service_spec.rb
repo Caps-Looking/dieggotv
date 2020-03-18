@@ -46,11 +46,11 @@ describe AdditionalService, type: :request do
 
   describe 'POST /create' do
     subject do
-      post additional_services_path, params: { additional_service: additional_service_params }
+      post additional_services_path, params: {additional_service: additional_service_params}
     end
 
     context 'with valid params' do
-      let(:additional_service_params) { { name: 'Basic', price: 55.0 } }
+      let(:additional_service_params) { {name: 'Basic', price: 55.0} }
 
       it { expect(subject).to redirect_to additional_service_path(assigns(:additional_service)) }
       it 'Verify saved additional service' do
@@ -60,7 +60,7 @@ describe AdditionalService, type: :request do
     end
 
     context 'with invalid params' do
-      let(:additional_service_params) { { name: '', price: 55.0 } }
+      let(:additional_service_params) { {name: '', price: 55.0} }
 
       it { expect(subject).to render_template(:new) }
     end
@@ -69,11 +69,11 @@ describe AdditionalService, type: :request do
   describe 'PUT /update' do
     let(:additional_service) { create(:additional_service) }
     subject do
-      put additional_service_path(additional_service), params: { additional_service: additional_service_params }
+      put additional_service_path(additional_service), params: {additional_service: additional_service_params}
     end
 
     context 'with valid params' do
-      let(:additional_service_params) { { name: 'Basic', price: 65.0 } }
+      let(:additional_service_params) { {name: 'Basic', price: 65.0} }
 
       it { expect(subject).to redirect_to additional_service_path(assigns(:additional_service)) }
       it 'Verify updated additional service' do
@@ -85,7 +85,7 @@ describe AdditionalService, type: :request do
     end
 
     context 'with invalid params' do
-      let(:additional_service_params) { { name: '', price: 65.0 } }
+      let(:additional_service_params) { {name: '', price: 65.0} }
 
       it { expect(subject).to render_template(:edit) }
     end

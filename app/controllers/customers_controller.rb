@@ -35,6 +35,7 @@ class CustomersController < ApplicationController
 
   def destroy
     set_customer
+    # binding.pry
     @customer.destroy
     redirect_to customers_path
   end
@@ -42,7 +43,9 @@ class CustomersController < ApplicationController
   private
 
   def set_customer_package_and_additional_services
-    @customer.customers_package.price = @customer.customers_package.package.price
+    unless @customer.customers_package.package_id == nil
+      @customer.customers_package.price = @customer.customers_package.package.price
+    end
 
     @customer.customers_additional_services.each do |cas|
       unless cas.additional_service_id == nil

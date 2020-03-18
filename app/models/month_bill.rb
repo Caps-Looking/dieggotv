@@ -1,4 +1,4 @@
 class MonthBill < ApplicationRecord
-  belongs_to :year_bill, optional: true, dependent: :delete
-  has_many :bills
+  belongs_to :year_bill, optional: true
+  has_many :bills, dependent: :destroy
 end
