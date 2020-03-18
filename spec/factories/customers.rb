@@ -3,12 +3,6 @@ FactoryBot.define do
     name { 'John' }
     cpf { '12213323312' }
 
-    trait :with_package do
-      after(:create) do |customer|
-        create(:customers_package, customer: customer)
-      end
-    end
-
     trait :with_package_and_additional_services do
       after(:create) do |customer|
         create(:customers_package, customer: customer)

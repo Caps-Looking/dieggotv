@@ -35,7 +35,6 @@ class CustomersController < ApplicationController
 
   def destroy
     set_customer
-    # binding.pry
     @customer.destroy
     redirect_to customers_path
   end

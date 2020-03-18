@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Customer, type: :request do
   describe 'GET /index' do
-    let!(:customers) { create_list(:customer, 5, :with_package) }
+    let!(:customers) { create_list(:customer, 5, :with_package_and_additional_services) }
     before { get customers_path }
 
     it { is_expected.to render_template(:index) }
@@ -23,7 +23,7 @@ describe Customer, type: :request do
   end
 
   describe 'GET /edit' do
-    let!(:customer) { create(:customer, :with_package) }
+    let!(:customer) { create(:customer, :with_package_and_additional_services) }
     before { get edit_customer_path(customer) }
 
     it { is_expected.to render_template(:edit) }
@@ -34,7 +34,7 @@ describe Customer, type: :request do
   end
 
   describe 'GET /show' do
-    let(:customer) { create(:customer, :with_package) }
+    let(:customer) { create(:customer, :with_package_and_additional_services) }
     before { get customer_path(customer) }
 
     it { is_expected.to render_template(:show) }
@@ -87,7 +87,7 @@ describe Customer, type: :request do
   end
 
   describe 'PUT /create' do
-    let(:customer) { create(:customer, :with_package) }
+    let(:customer) { create(:customer, :with_package_and_additional_services) }
     subject do
       put customer_path(customer), params: {customer: customer_params}
     end
