@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5a1b13b-bff3-4cda-83b0-a98cb9131959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spec/factories/bills.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/month_bills.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/services/billing_service_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/services/generate_bill_service_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/services/generate_month_bill_service_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/services/generate_year_bill_service_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a2f58543-c317-4c79-aab7-d12c2846f80d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a2f58543-c317-4c79-aab7-d12c2846f80d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/customers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/customers_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/customers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/customers.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/customers_additional_services.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/customers_additional_services.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/customers_packages.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/customers_packages.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/customer_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/customer_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/decorators/additional_service_decorator_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/decorators/additional_service_decorator_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/decorators/customer_decorator_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/decorators/customer_decorator_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/decorators/package_decorator_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/decorators/package_decorator_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +115,41 @@
       <command value="rails routes" />
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Create bills">
+  <component name="RunManager" selected="RSpec.AdditionalServiceDecorator">
+    <configuration name="AdditionalServiceDecorator" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="dieggotv" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/decorators/additional_service_decorator_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="AdditionalServiceDecorator" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Create bills Verify saved Bill" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="dieggotv" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -191,7 +218,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Create month bill" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerDecorator" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="dieggotv" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -211,10 +238,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/services/generate_month_bill_service_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/decorators/customer_decorator_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Create month bill" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="CustomerDecorator" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -225,7 +252,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Create year bill Verify sav..." type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+    <configuration name="PackageDecorator" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="dieggotv" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -245,44 +272,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/services/generate_year_bill_service_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/decorators/package_decorator_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Create year bill Verify saved YearBill" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Create year bill" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="dieggotv" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/services/generate_year_bill_service_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Create year bill" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="PackageDecorator" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -392,11 +385,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.AdditionalServiceDecorator" />
+        <item itemvalue="RSpec.PackageDecorator" />
+        <item itemvalue="RSpec.CustomerDecorator" />
         <item itemvalue="RSpec.Create bills" />
         <item itemvalue="RSpec.Create bills Verify saved Bill" />
-        <item itemvalue="RSpec.Create month bill" />
-        <item itemvalue="RSpec.Create year bill Verify sav..." />
-        <item itemvalue="RSpec.Create year bill" />
       </list>
     </recent_temporary>
   </component>
@@ -448,6 +441,7 @@
       <workItem from="1584103071024" duration="19220000" />
       <workItem from="1584363257094" duration="15892000" />
       <workItem from="1584547448977" duration="3046000" />
+      <workItem from="1584619984416" duration="1125000" />
     </task>
     <servers />
   </component>
@@ -471,53 +465,53 @@
       <screen x="59" y="24" width="1861" height="1056" />
     </state>
     <state x="722" y="299" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/59.24.1861.1056@59.24.1861.1056" timestamp="1583347749152" />
-    <state width="1822" height="361" key="GridCell.Tab.0.bottom" timestamp="1584559268580">
+    <state width="1822" height="361" key="GridCell.Tab.0.bottom" timestamp="1584621180516">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="361" key="GridCell.Tab.0.bottom/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584559268580" />
-    <state width="1822" height="361" key="GridCell.Tab.0.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584132178533" />
+    <state width="1822" height="361" key="GridCell.Tab.0.bottom/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584569908535" />
+    <state width="1822" height="361" key="GridCell.Tab.0.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584621180516" />
     <state width="1811" height="384" key="GridCell.Tab.0.bottom/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="361" key="GridCell.Tab.0.center" timestamp="1584559268580">
+    <state width="1822" height="361" key="GridCell.Tab.0.center" timestamp="1584621180515">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="361" key="GridCell.Tab.0.center/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584559268580" />
-    <state width="1822" height="361" key="GridCell.Tab.0.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584132178532" />
+    <state width="1822" height="361" key="GridCell.Tab.0.center/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584569908534" />
+    <state width="1822" height="361" key="GridCell.Tab.0.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584621180515" />
     <state width="1811" height="384" key="GridCell.Tab.0.center/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="361" key="GridCell.Tab.0.left" timestamp="1584559268580">
+    <state width="1822" height="361" key="GridCell.Tab.0.left" timestamp="1584621180514">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="361" key="GridCell.Tab.0.left/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584559268580" />
-    <state width="1822" height="361" key="GridCell.Tab.0.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584132178531" />
+    <state width="1822" height="361" key="GridCell.Tab.0.left/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584569908534" />
+    <state width="1822" height="361" key="GridCell.Tab.0.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584621180514" />
     <state width="1811" height="384" key="GridCell.Tab.0.left/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023110" />
-    <state width="1822" height="361" key="GridCell.Tab.0.right" timestamp="1584559268580">
+    <state width="1822" height="361" key="GridCell.Tab.0.right" timestamp="1584621180515">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="361" key="GridCell.Tab.0.right/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584559268580" />
-    <state width="1822" height="361" key="GridCell.Tab.0.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584132178533" />
+    <state width="1822" height="361" key="GridCell.Tab.0.right/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584569908535" />
+    <state width="1822" height="361" key="GridCell.Tab.0.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584621180515" />
     <state width="1811" height="384" key="GridCell.Tab.0.right/59.24.1861.1056@59.24.1861.1056" timestamp="1583527023111" />
-    <state width="1822" height="361" key="GridCell.Tab.1.bottom" timestamp="1584559268580">
+    <state width="1822" height="361" key="GridCell.Tab.1.bottom" timestamp="1584621180518">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="361" key="GridCell.Tab.1.bottom/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584559268580" />
-    <state width="1822" height="361" key="GridCell.Tab.1.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584132178535" />
+    <state width="1822" height="361" key="GridCell.Tab.1.bottom/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584569908536" />
+    <state width="1822" height="361" key="GridCell.Tab.1.bottom/48.24.1872.1056@48.24.1872.1056" timestamp="1584621180518" />
     <state width="1811" height="326" key="GridCell.Tab.1.bottom/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460863" />
-    <state width="1822" height="361" key="GridCell.Tab.1.center" timestamp="1584559268580">
+    <state width="1822" height="361" key="GridCell.Tab.1.center" timestamp="1584621180517">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="361" key="GridCell.Tab.1.center/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584559268580" />
-    <state width="1822" height="361" key="GridCell.Tab.1.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584132178534" />
+    <state width="1822" height="361" key="GridCell.Tab.1.center/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584569908536" />
+    <state width="1822" height="361" key="GridCell.Tab.1.center/48.24.1872.1056@48.24.1872.1056" timestamp="1584621180517" />
     <state width="1811" height="326" key="GridCell.Tab.1.center/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460862" />
-    <state width="1822" height="361" key="GridCell.Tab.1.left" timestamp="1584559268580">
+    <state width="1822" height="361" key="GridCell.Tab.1.left" timestamp="1584621180516">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="361" key="GridCell.Tab.1.left/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584559268580" />
-    <state width="1822" height="361" key="GridCell.Tab.1.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584132178533" />
+    <state width="1822" height="361" key="GridCell.Tab.1.left/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584569908535" />
+    <state width="1822" height="361" key="GridCell.Tab.1.left/48.24.1872.1056@48.24.1872.1056" timestamp="1584621180516" />
     <state width="1811" height="326" key="GridCell.Tab.1.left/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460862" />
-    <state width="1822" height="361" key="GridCell.Tab.1.right" timestamp="1584559268580">
+    <state width="1822" height="361" key="GridCell.Tab.1.right" timestamp="1584621180517">
       <screen x="48" y="24" width="1872" height="1056" />
     </state>
-    <state width="1822" height="361" key="GridCell.Tab.1.right/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584559268580" />
-    <state width="1822" height="361" key="GridCell.Tab.1.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584132178534" />
+    <state width="1822" height="361" key="GridCell.Tab.1.right/48.24.1872.1056/1920.0.1366.768@48.24.1872.1056" timestamp="1584569908536" />
+    <state width="1822" height="361" key="GridCell.Tab.1.right/48.24.1872.1056@48.24.1872.1056" timestamp="1584621180517" />
     <state width="1811" height="326" key="GridCell.Tab.1.right/59.24.1861.1056@59.24.1861.1056" timestamp="1583526460863" />
     <state width="264" height="563" key="HiddenNamespacesPopup" timestamp="1583420589906">
       <screen x="59" y="24" width="1861" height="1056" />
@@ -589,6 +583,8 @@
     <SUITE FILE_PATH="coverage/dieggotv@CustomersAdditionalService____.rcov" NAME="CustomersAdditionalService ... Coverage Results" MODIFIED="1584108265504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Customer_POST__create_with______1_.rcov" NAME="Customer POST /create with ... (1) Coverage Results" MODIFIED="1584383508298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Development__dieggotv.rcov" NAME="Development: dieggotv Coverage Results" MODIFIED="1584548099001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@AdditionalServiceDecorator.rcov" NAME="AdditionalServiceDecorator Coverage Results" MODIFIED="1584621180417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@PackageDecorator.rcov" NAME="PackageDecorator Coverage Results" MODIFIED="1584621170219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Customer_POST__create_with______3_.rcov" NAME="Customer POST /create with ... (3) Coverage Results" MODIFIED="1584383493385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Package_PUT__update.rcov" NAME="Package PUT /update Coverage Results" MODIFIED="1584130948289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Customer_Associations.rcov" NAME="Customer Associations Coverage Results" MODIFIED="1584103895396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
@@ -604,6 +600,7 @@
     <SUITE FILE_PATH="coverage/dieggotv@Package_POST__create.rcov" NAME="Package POST /create Coverage Results" MODIFIED="1584130582878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@YearBill.rcov" NAME="YearBill Coverage Results" MODIFIED="1584108890590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Customer_PUT__create.rcov" NAME="Customer PUT /create Coverage Results" MODIFIED="1584384656836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
+    <SUITE FILE_PATH="coverage/dieggotv@CustomerDecorator.rcov" NAME="CustomerDecorator Coverage Results" MODIFIED="1584620382664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Package_POST__create_with_i___.rcov" NAME="Package POST /create with i... Coverage Results" MODIFIED="1584130575479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@Customer.rcov" NAME="Customer Coverage Results" MODIFIED="1584554476355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
     <SUITE FILE_PATH="coverage/dieggotv@CustomersAdditionalService.rcov" NAME="CustomersAdditionalService Coverage Results" MODIFIED="1584104468169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="dieggotv" />
