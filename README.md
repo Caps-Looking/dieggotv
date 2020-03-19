@@ -1,24 +1,20 @@
-# README
+# DieggoTV
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails study application about cable TV.
 
-Things you may want to cover:
+* Ruby and Rails versions:  
+    `Ruby 2.5.0p0`
+    `Rails 5.0.7.2`
 
-* Ruby version
+* System dependencies   
+    `Postgres`  
+    `Ruby and Rails in versions above`
+    
+* Configuration  
+    Run `bundle install`    
+    Change the `database.yml` with your Postgres configs   
+    To create the db and tables, run `rails db:create db:migrate`   
+    Run the app with `rails s`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* How to run the test suite     
+    Run `bundle exec rspec spec`
