@@ -2,7 +2,7 @@
 
   <div class="index-header">
     <h1>Packages</h1>
-    <%= link_to fa_icon("plus"), new_package_path, class: "plus-icon" %>
+    <%= link_to fa_icon("plus"), new_package_path, class: "plus-icon", id: "new" %>
   </div>
 
   <table cellspacing="0" cellpadding="0">
@@ -18,9 +18,9 @@
         <td><%= package.name %></td>
         <td><%= package.price %></td>
         <td>
-          <%= link_to fa_icon("eye"), package, method: :get %>
-          <%= link_to fa_icon("edit"), edit_package_path(package) %>
-          <%= link_to fa_icon("trash"), package, method: :delete, data: {confirm: "Do you really want to remove?"} %>
+          <%= link_to fa_icon("eye"), package, method: :get, id: "eye" %>
+          <%= link_to fa_icon("edit"), edit_package_path(package), id: "edit" %>
+          <%= link_to fa_icon("trash"), package, method: :delete, data: {confirm: "Do you really want to remove?"}, id: "trash" %>
         </td>
       </tr>
     <% end %>
