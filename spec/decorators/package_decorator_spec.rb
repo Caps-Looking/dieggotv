@@ -6,7 +6,7 @@ RSpec.describe PackageDecorator do
 
   describe '#description' do
     it 'gets package description' do
-      expect(decorator.description).to eq('Basic - $55.0')
+      expect(decorator.description).to eq("#{package.name} - $#{package.price}")
     end
   end
 end

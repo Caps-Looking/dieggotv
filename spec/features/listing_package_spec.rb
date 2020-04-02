@@ -1,37 +1,28 @@
 require 'rails_helper'
 
-describe 'Package Listing', :js, type: :feature do
-  packages = []
-  before(:all) do
-    packages = FactoryBot.create_list(:package, 5)
-  end
+feature 'Package Listing' do
+  given!(:packages) { create_list(:package, 2) }
+  given(:package) { packages.first }
 
-  before(:each) do
-    visit packages_path
-  end
+  background { visit packages_path }
 
-  scenario 'Accessing index page' do
-    expect(page).to have_link('new', href: new_package_path) &&
-      have_table &&
-      have_xpath('.//tr', count: 6)
+  scenario 'Listing packages' do
+    expect(page).to have_link('new')
 
-    within 'table' do
-      within 'tr:nth-child(2)' do
-        expect(page).to have_link('eye', href: package_path(packages[0].id)) &&
-          have_link('edit', href: edit_package_path(packages[0].id)) &&
-          have_link('trash', href: package_path(packages[0].id))
+    within 'table tbody' do
+      expect(page).to have_selector('tr', count: 2)
+
+      within(page.find('tr', text: package.name)) do
+        within('td:nth-child(1)') { expect(page).to have_text(package.id) }
+        within('td:nth-child(2)') { expect(page).to have_text(package.name) }
+        within('td:nth-child(3)') { expect(page).to have_text(package.price) }
+
+        within('td:nth-child(4)') do
+          expect(page).to have_selector('a[data-title="Show"]') &&
+                          have_selector('a[data-title="Edit"]') &&
+                          have_selector('a[data-title="Delete"]')
+        end
       end
     end
-  end
-
-  scenario 'Deleting a package' do
-    expect(page).to have_xpath('.//tr', count: 6)
-    within 'table' do
-      within 'tr:nth-child(2)' do
-        click_link('trash')
-      end
-    end
-    accept_alert
-    expect(page).to have_xpath('.//tr', count: 5)
   end
 end

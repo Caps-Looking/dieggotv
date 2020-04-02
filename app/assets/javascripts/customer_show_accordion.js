@@ -1,10 +1,10 @@
 $(document).on('turbolinks:load', function () {
     $('.competence').on('click', function (event) {
-        const monthBillsActive = 'month-bills-active';
-        const monthBills = $('.month-bills');
+        var monthBillsActive = 'month-bills-active';
+        var monthBills = $('.month-bills');
 
-        const competence = $(event.target);
-        const competenceActive= 'competence-active';
+        var competence = $(event.target);
+        var competenceActive= 'competence-active';
 
         monthBills.hasClass(monthBillsActive) ?
             monthBills.removeClass(monthBillsActive) :
@@ -16,8 +16,8 @@ $(document).on('turbolinks:load', function () {
     });
 
     $('.month-bill').on('click', function (event) {
-        const monthBill = $(event.target);
-        const monthBillActive= 'month-bill-active';
+        var monthBill = $(event.target);
+        var monthBillActive= 'month-bill-active';
 
         monthBill.hasClass(monthBillActive) ?
             monthBill.removeClass(monthBillActive) :

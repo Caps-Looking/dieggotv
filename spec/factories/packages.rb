@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :package do
-    name { 'Basic' }
+    name { Faker::FunnyName.name }
     price { 55.0 }
   end
 end

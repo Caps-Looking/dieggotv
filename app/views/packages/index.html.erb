@@ -6,23 +6,27 @@
   </div>
 
   <table cellspacing="0" cellpadding="0">
+    <thead>
     <tr class="table-header">
       <th>Id</th>
       <th>Name</th>
       <th>Price</th>
       <th>Actions</th>
     </tr>
+    </thead>
+    <tbody>
     <% @packages.each do |package| %>
       <tr class=package>
         <td><%= package.id %></td>
         <td><%= package.name %></td>
         <td><%= package.price %></td>
         <td>
-          <%= link_to fa_icon("eye"), package, method: :get, id: "eye" %>
-          <%= link_to fa_icon("edit"), edit_package_path(package), id: "edit" %>
-          <%= link_to fa_icon("trash"), package, method: :delete, data: {confirm: "Do you really want to remove?"}, id: "trash" %>
+          <%= link_to fa_icon("eye"), package, method: :get, data: {title: 'Show'} %>
+          <%= link_to fa_icon("edit"), edit_package_path(package), data: {title: 'Edit'} %>
+          <%= link_to fa_icon("trash"), package, method: :delete, data: {confirm: "Do you really want to remove?", title: 'Delete'}, id: "trash" %>
         </td>
       </tr>
     <% end %>
+    </tbody>
   </table>
 </div>
