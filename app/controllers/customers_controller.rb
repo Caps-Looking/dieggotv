@@ -47,7 +47,9 @@ class CustomersController < ApplicationController
     end
 
     @customer.customers_additional_services.each do |cas|
-      unless cas.additional_service_id == nil
+      if cas.additional_service_id == nil
+        @customer.customers_additional_services.delete(cas)
+      else
         cas.price = cas.additional_service.price
       end
     end
