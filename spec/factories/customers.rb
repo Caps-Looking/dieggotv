@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :customer do
-    name { 'John' }
-    cpf { '12213323312' }
+    name { Faker::FunnyName.name }
+    cpf { Faker::Number.number(digits: 11) }
 
     trait :with_package_and_additional_services do
       after(:create) do |customer|

@@ -6,7 +6,7 @@ RSpec.describe CustomerDecorator do
 
   describe '#cpf_masked' do
     it 'applies mask on cpf' do
-      expect(decorator.cpf_masked).to eq('122.133.233-12')
+      expect(decorator.cpf_masked).to eq(CPF.new(customer.cpf).formatted)
     end
   end
 end

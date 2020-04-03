@@ -5,7 +5,7 @@
   <div class="info">
     <div>
       <label> Id: </label>
-      <%= @customer.id %> <%= link_to fa_icon("edit"), edit_customer_path(@customer) %>
+      <%= @customer.id %> <%= link_to fa_icon("edit"), edit_customer_path(@customer), id: "edit" %>
     </div>
     <div>
       <label> Name: </label>

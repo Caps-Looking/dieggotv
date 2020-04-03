@@ -86,7 +86,7 @@ describe Customer, type: :request do
     end
   end
 
-  describe 'PUT /create' do
+  describe 'PUT /update' do
     let(:customer) { create(:customer, :with_package_and_additional_services) }
     subject do
       put customer_path(customer), params: {customer: customer_params}

@@ -2,10 +2,11 @@
 
   <div class="index-header">
     <h1>Customers</h1>
-    <%= link_to fa_icon("plus"), new_customer_path, class: "plus-icon" %>
+    <%= link_to fa_icon("plus"), new_customer_path, class: "plus-icon", id: "new" %>
   </div>
 
   <table cellspacing="0" cellpadding="0">
+    <thead>
     <tr class="table-header">
       <th>Id</th>
       <th>Name</th>
@@ -13,6 +14,8 @@
       <th>Package</th>
       <th>Actions</th>
     </tr>
+    </thead>
+    <tbody>
     <% @customers.each do |customer| %>
       <tr class=package>
         <td><%= customer.id %></td>
@@ -20,11 +23,12 @@
         <td><%= customer.cpf_masked %></td>
         <td><%= customer.customers_package.package.name %></td>
         <td>
-          <%= link_to fa_icon("eye"), customer, method: :get %>
-          <%= link_to fa_icon("edit"), edit_customer_path(customer) %>
-          <%= link_to fa_icon("trash"), customer, method: :delete, data: {confirm: "Do you really want to remove?"} %>
+          <%= link_to fa_icon("eye"), customer, method: :get, data: {title: 'Show'} %>
+          <%= link_to fa_icon("edit"), edit_customer_path(customer), data: {title: 'Edit'} %>
+          <%= link_to fa_icon("trash"), customer, method: :delete, data: {confirm: "Do you really want to remove?", title: 'Delete'} %>
         </td>
       </tr>
     <% end %>
+    </tbody>
   </table>
 </div>
