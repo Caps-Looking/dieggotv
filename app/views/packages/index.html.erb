@@ -23,7 +23,7 @@
         <td>
           <%= link_to fa_icon("eye"), package, method: :get, data: {title: 'Show'} %>
           <%= link_to fa_icon("edit"), edit_package_path(package), data: {title: 'Edit'} %>
-          <%= link_to fa_icon("trash"), package, method: :delete, data: {confirm: "Do you really want to remove?", title: 'Delete'}, id: "trash" %>
+          <%= link_to fa_icon("trash"), package, method: :delete, data: {confirm: "Do you really want to remove?", title: 'Delete'} %>
         </td>
       </tr>
     <% end %>

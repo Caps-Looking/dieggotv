@@ -6,7 +6,7 @@ RSpec.describe AdditionalServiceDecorator do
 
   describe '#description' do
     it 'gets additional service description' do
-      expect(decorator.description).to eq('Premiere FC - $150.0')
+      expect(decorator.description).to eq("#{additional_service.name} - $#{additional_service.price}")
     end
   end
 end
